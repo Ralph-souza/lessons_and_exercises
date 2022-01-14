@@ -1,2 +1,11 @@
 # lessons_and_exercises
-This repository contains lessons and exercises from courses along with challenges from channels such like: HackerRank, LeetCode, Codewars, Uri and others.
+
+## Proposal
+```
+The ideia behind this repository is to archive information about lessons and exercises from courses. Although it's important to clarify that its content is a representation of my understanding of the courses proposal.
+Also you may find here attempts of solution of a series of challenges propositions from sites such as:
+- [HackerRank](https://www.hackerrank.com/)
+- [Codewars](https://www.codewars.com)
+- [LeetCode](https://leetcode.com/)
+- [Beecrowd](https://www.beecrowd.com.br/judge/en/login/?origem=1)
+```
