@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lists & Tables</title>
 </head>
 <body>
-    
+    <!-- Unordered lists -->
+    <!-- Unordered list are basically lists unu -->
+    <ul style="list-style: none;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Ordered lists -->
+    <!-- Shortcut tip: If you type the tag + * + number you can multiply that action by the number of times that you chose -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <!-- Nested lists -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2 
+            <ul>
+                <li>Nested item 1</li>
+                <li>Nested item 2</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Tables -->
+    <!-- To define a table head we use <thead> inside we can define a row by using <tr> and then the head by using <th> -->
+    <!-- After creating a head we need data which goes in the body and to do that we use <tbody> -->
+    <!-- Once inside the body we create the row with <tr> and the data with <td> -->
+    <table>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+
+        <tbody style="width: 600px;">
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>jdoe@email.com</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>janedoe@email.com</td>
+            </tr>
+            <tr>
+                <td>Steve</td>
+                <td>Smith</td>
+                <td>steve@email.com</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
