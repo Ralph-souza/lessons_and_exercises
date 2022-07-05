@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <!-- Shortcut tip: Using colon ':' after the tags name shows us the types available, like: input:<here shows the type> -->
+    <!-- The action inside the form means where it is going to be submitted to, like a server side file as a .php or .py -->
+    <form action="">
+        <!-- Text input -->
+        <div>
+            <!-- The for attribute inside label most be the same as the ID attribute inside the input -->
+            <label for="name">Name</label><br>
+            <!-- Once the ID matches the for the input recognizes it as a valid field -->
+            <!-- The name attribute is the one that will validate the action on the server side -->
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <!-- E-mail input -->
+        <div>
+            <!-- The type of data helps valid the inputed value -->
+            <!-- The placeholder attibute helps us to provide info or an example of the expected data of the field -->
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your e-mail">
+        </div>
+
+        <!-- Textarea input -->
+        <div>
+            <label for="message">Message</label><br>
+            <!-- The cols attribute will make it bigger horizontally and row vertically -->
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+
+        <!-- Select input -->
+        <div>
+            <label for="gender">Gender</label><br>
+            <!-- The select allows to create a quick menu with setup options to choose -->
+            <!-- To pre select a value we only need to insert the selected attribute, like the male example bellow -->
+            <select name="gender" id="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Number input -->
+        <div>
+            <label for="age">Age</label><br>
+            <!-- Typing the attribute plus colon will automatically fill the type of the attribute -->
+            <!-- Example: input:number -->
+            <input type="number" name="age" id="age">
+        </div>
+
+        <!-- Date input -->
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+
+        <!-- Radios input -->
+        <div>
+            <label for="membership">Membership</label><br>
+            <!-- When using radio type we have to create multiples inputs with different values -->
+            <!-- The radio button comes without label so, in order to label it we put the text right in front of it -->
+            <!-- To pre select a value we only need to insert the checked attribute, like the simple example bellow -->
+            <input type="radio" name="membership" id="membership" value="simple" checked> Simple
+            <input type="radio" name="membership" id="membership" value="standard"> Standard
+            <input type="radio" name="membership" id="membership" value="super"> Super
+        </div>
+
+        <!-- Checkbox input -->
+        <div>
+            <label for="likes">I like...</label><br>
+            <!-- Shortcut tip: If you highlight a value and press CTRL + D the next one with the same value will be selected -->
+            <!-- Multiple selections with CTRL + D helps out when multiple values should be changed -->
+            <!-- The checkbox attribute allows us to choose multiple values -->
+            <input type="checkbox" name="likes" id="likes" value="bike"> Bike
+            <input type="checkbox" name="likes" id="likes" value="car"> Car
+            <input type="checkbox" name="likes" id="likes" value="airplane"> Airplane
+        </div>
+
+        <!-- Input button using <input> attribute -->
+        <div>
+            <!-- Input is a self closing tag so the text goes on value attribute-->
+            <input type="submit" value="Submit">
+        </div>
+
+        <!-- Input button using <button> attribute -->
+        <div>
+            <!-- Button allows us to type the text in the middle -->
+            <button type="submit">Submit</button>
+        </div>
+
+        <!-- Reset button -->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
