@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box, Model, Margin & Padding</title>
+    <style>
+        /* CSS Reset */
+        /* The CSS Reset takes all the margins and paddings so remember to configure them in the layout */
+        /* Border-sizing restricts the padding to the box size */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Margin is the space outside the element border */
+        /* Padding is the space inside the element border */
+        #box {
+            background: #f4f4f4;
+            border: 2px solid #777;
+            width: 500px;
+
+            /* Padding on all sides */
+            padding: 20px;
+
+            /* Padding per side */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+            /* Padding shorthand - TOP, RIGHT, BOTTOM, LEFT */
+            padding: 10px 20px 10px 20px;
+            /* Using padding property only can define the size to the the four sides */
+            /* The order is: TOP, RIGHT, BOTTOM and LEFT */
+
+            /* Padding shorthand - top/bottom, left/right */
+            padding: 10px 20px;
+            /* When using only two values remember that the first configures the X axis a the second the Y */
+
+            /* Margin on all sides */
+            margin: 20px;
+
+            /* Margin per side */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+            /* Margin shorthand - TOP, RIGHT, BOTTOM, LEFT */
+            margin: 10px 20px 10px 20px;
+
+            /* Margin shorthand - top/bottom, left/right */
+            margin: 10px 20px;
+        }
+
+        #box h3 {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h3>Box One</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Totam ea provident odit natus modi aspernatur! Excepturi corporis tenetur a sit!
+        </p>
+    </div>
+    <div id="box">
+        <h3>Box Two</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Totam ea provident odit natus modi aspernatur! Excepturi corporis tenetur a sit!
+        </p>
+    </div>
+</body>
+</html>
