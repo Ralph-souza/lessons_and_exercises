@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- The <html> below is our root -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- You can use other fonts that are not in the standard CSS by importing them using the link -->
+    <!-- The example below came from Google Fonts which, once selected, provides you the link tag -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Fonts</title>
+    <style>
+
+        /* There are few standard font-families in CSS that we can use */
+        /* Typing the property shows us the available values */
+        body {
+            font-family: 'Roboto', sans-serif;
+
+            /* Font-size standard size is 16px which is defined by the root <html> tag in the boilerplate */
+            font-size: 18px;
+            line-height: 1.6em;
+        }
+
+        /* Establishing the paragraph could help and make it explicit */
+        /* However in that case we don`t need it since we are targeting a <span> inside ID welcome */
+        #welcome p span {
+            font-weight: bold;
+        }
+
+        #about span {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            <span>Autem consequuntur aliquam exercitationem velit adipisci!</span> 
+            Delectus beatae praesentium repudiandae sequi consequuntur!
+        </p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            <span>Distinctio id eligendi optio sint nesciunt iste amet explicabo dolores repudiandae.</span> 
+            Modi.
+        </p>
+    </div>
+</body>
+</html>
