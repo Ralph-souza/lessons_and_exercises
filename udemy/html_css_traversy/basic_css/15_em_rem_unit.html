@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Obs: The <html> is our absolut root element which has 16px value by default -->
+<!-- The default EM unit value for it is 1.17em -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM & REM Units</title>
+    <style>
+        #box-1 {
+            /* When we add this value the it makes the following calculation */
+            /* 20 * 1.17em */
+            /* So in the end we will have a 23.4xp font-size */
+            font-size: 20px;
+        }
+
+        #box-1 p {
+            /* Here we have a child element, the paragraph is a child element of box-1 */
+            /* So it is going to multiply 20 by 1.5em making the paragraph 30px large */
+            /* That is the problem with EM unit, now the paragraph is larger than the title */
+            /* Because the p font-size will be based on it parent element */
+            font-size: 1.5em;
+            padding: 1em;
+        }
+
+        #box-1 ul {
+            font-size: 1.2em
+        }
+
+        /* REM unit base itself on root element (<html>) value which is by default 16px  */
+        /* It will always be the defined REM times 16px so, an example, if we define 2rem to a element attribute */
+        /* the final value will be 16 * 2 */
+        #box-2 h3 {
+            font-size: 2rem;
+        }
+
+        #box-2 p {
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <h3>Box one</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatum aspernatur aliquam doloribus ea inventore sapiente harum officiis amet 
+            libero modi, excepturi deleniti ducimus vero minima delectus. 
+            Saepe fugiat perferendis suscipit.
+        </p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3
+                <ul>
+                    <!-- Shortcut tip: you can put crescent value info into a tag by applying {$} as the example below -->
+                    <!-- li{$}*3 - it will create three <li> tags from 1 to 3 -->
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3
+                        <ul>
+                            <!-- Nested elements is another problem using EM units since it will be multiplyed by its parent element value -->
+                            <!-- Making it bigger than its parent element -->
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>4</li>
+        </ul>
+    </div>
+    <div id="box-2">
+        <h3>Box two</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatum aspernatur aliquam doloribus ea inventore sapiente harum officiis amet 
+            libero modi, excepturi deleniti ducimus vero minima delectus. 
+            Saepe fugiat perferendis suscipit.
+        </p>
+    </div>
+</body>
+</html>
