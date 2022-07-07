@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside: Visibility, Order & Negative Margin</title>
+    <style>
+        h1 {
+            /* display: none; */
+            /* Display none is a valid resource when we don`t want something to be showed on mobile screen */
+            /* Display none also removes the element completely */
+
+            /* visibility: hidden; */
+            /* Visibility can hide the element however the space used is kept */
+
+            /* The important flag is the only method of breaking hierarchical precedence */
+            color: blue !important;
+        }
+
+        /* In CSS the last attribute overrides the first */
+        /* However there is a hierarchical precedence: IDs over classes, classes over elements */
+        .hello {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World!</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aut voluptatem repellat eius, omnis, ipsam impedit cum placeat labore id eum earum 
+        dolores doloremque vero praesentium minima nobis ullam nesciunt pariatur!
+    </p>
+</body>
+</html>
