@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targered Selector</title>
+    <style>
+        /* Direct child */
+        /* Using greater than points to a direct child of an element */
+        div > p {
+            background: #ddd;
+        }
+
+        /* Directly after */
+        /* Using plus sign points to an element in the same level */
+        div + p {
+            background: #333;
+            color: #fff;
+        }
+
+        /* By attribute */
+        a[target] {
+            background: red;
+            color: #fff;
+        }
+
+        /* Specific attribute value */
+        /* We can also target an attribute with an especific value */
+        input[type='text'],
+        input[type='email'] {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <!-- Shortcut tip: To create a series of list with crescent values use tag + curly brackets + dollar sign + star * times it shuold repeat -->
+        <!-- Example: li{Item $}*3 -->
+        <ul>
+            <li>Item 1</li>
+            <li><p>Item 2</p></li>
+            <li>Item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#">Page 1</a><br>
+    <a href="#">Page 2</a><br>
+    <a href="http://google.com" target="_blank">Google</a>
+
+    <br><br>
+    <form action="">
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
