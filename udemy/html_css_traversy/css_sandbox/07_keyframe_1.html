@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes Animation 1</title>
+    <style>
+        body {
+            background: #333;
+        }
+
+        .box {
+            background: white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: animate1;
+            animation-duration: 2s;
+
+            /* The iteration count sets how many times the process will repeat */
+            /* To keep repeting we use <infinite> value */
+            animation-iteration-count: 1;
+
+            /* The fill mode set as <forwards> will keep the element at its final size value */
+            animation-fill-mode: forwards;
+
+            /* Animation delay is set to define how long will it take to start */
+            animation-delay: 1s;
+
+            /* Animation direction sets the direction from where it starts*/
+            animation-direction: alternate;
+
+            /* This deals with the speed of the motion, start slow and speed up or vice-versa */
+            animation-timing-function: ease-out;
+
+            /* Resuming lines 18 to 35 */
+            /* Syntax: <name of the animation> - speed - fill mode - delay - timing function */
+            animation: animate1 5s forwards 1s ease-out;
+        }
+
+        @keyframes animate1 {
+            /* Since the start value of the box is 200px we don`t need the <from> attribute */
+            /* Keeping it for studying purposes */
+            from {
+                width: 200px;
+                top: 0;
+            }
+
+            to {
+                width: 600px;
+                background-color: yellow;
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

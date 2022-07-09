@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: #fff;
+            width: 100px;
+            height: 100px;
+            transition-property: background;
+            transition-duration: 2s;
+            transition-delay: 3s;
+            transition: all 2s ease-in-out;
+        }
+
+        .box:hover {
+            background: red;
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+        }
+
+        /* TRANSITIONAL PROPERTIES */
+        /* Properties that have an identifiable halfway point */
+        /* background, background-color, border-radius, height, width and etc */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
