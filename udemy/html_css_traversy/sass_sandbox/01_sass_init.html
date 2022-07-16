@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sass Init</title>
+</head>
+<body>
+    <!-- We can generate a npm package.json by entering the command <npm init -y> -->
+    <!-- The <-y> installs the deafult configuration so we don`t have to answer setup questions -->
+
+    <!-- The command <npm install node-sass> will install node sass pre compilier -->
+
+    <!-- Once installed it will generate a node modules directory along with a package-lock.json file -->
+
+    <!-- The next step is to replace on package.json line 7(seven) by the following command line -->
+    <!-- "sass": "node-sass -w scss/ -o dist/css/ --recursive" -->
+
+    <!-- The Sass script will allow us to use the command npm run sass -->
+
+    <!-- The line basic dictates that we are running node-sass -->
+    <!-- The -w is a watch flag to constantly watch our folder scss/ -->
+    <!-- The -o is an output which will point to a folder called dist/css/ -->
+    <!-- Ending up with --recursive -->
+
+    <!-- We use .scss because of its syntax which is close to CSS -->
+
+    <!-- After that we create on our directory root two folders one called scss and other called dist -->
+    <!-- Inside the scss we create a main.scss file -->
+    <!-- Now we execute the command: <npm run sass> -->
+
+    <!-- After that we put a small code line inside the file main.scss and save it -->
+    <!-- Once saved it will complete rendering and creating inside our dist folder a css folder -->
+</body>
+</html>
