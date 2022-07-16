@@ -1,5 +1,58 @@
-$color: blue;
+// Creating new files could required node-sass to be restarted
+
+// In order to turn varibles accessable we need to import the file
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    background: $color;
+    background: $light-color;
+    color: $dark-color;
+    font-family: $font-stack;
+    line-height: 1.5rem;
+}
+
+// Inside the header we have one of the most used SASS resources, the nesting
+// We can nest elements that belongs to a block just by inputing them and the required configuration
+header {
+    background: $dark-color;
+    color: $light-color;
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+// The &- points to a child element 
+// In this case we have two section each one with its own class, section-a and b
+// Using &-a allows us to point to section-a class inside section element
+.section {
+    padding: 3rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    &-a {
+        background: $primary-color;
+        color: #fff;
+    }
+
+    &-b {
+        background: $secondary-color;
+        color: #fff;
+    }
+}
+
+// The same goes for hovering, using &:hover will point to its parent element
+a {
+    color: $dark-color;
+
+    &:hover {
+        color: coral;
+    }
 }
