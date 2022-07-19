@@ -9,7 +9,8 @@
   </head>
   <body>
     <!-- Container -->
-    <div>
+    <!-- MX -> Maring on the X axis -->
+    <div class="container mx-auto">
       <article>
         <h3>Article One</h3>
         <p>
@@ -22,11 +23,55 @@
 
       <!-- Margin -->
 
+      <!-- The numbers are quarters of the root size <html> which is by default 16px -->
+      <!-- m-1 = 0.25rem / m-2 = 0.5rem / m-3 = 0.75rem / m-4 = 1rem -->
+      <!-- M means MARGIN all around -->
+      <div class="bg-slate-100 m-2">Hello world!</div>
+      <!-- ML and MR -> Margin Left / Margin Right -->
+      <div class="bg-slate-100 ml-4">Hello world!</div>
+      <div class="bg-slate-100 mr-4">Hello world!</div>
+      <!-- MT and MB -> Margin Top / Margin Bottom -->
+      <div class="bg-slate-100 mt-4">Hello world!</div>
+      <div class="bg-slate-100 mb-4">Hello world!</div>
+      <!-- We can also do the sizing by pixels however that ain`t a good practice -->
+      <div class="bg-slate-100 mt-[20px]">Hello world!</div>
+
       <!-- Padding -->
 
+      <!-- P means PADDING all around -->
+      <!-- The padding follows the same pattern of margin for sizing -->
+      <div class="bg-purple-500 text-white p-2">Hello world!</div>
+      <!-- PL and PR -> Padding Left / Padding Right -->
+      <div class="bg-purple-500 text-white pl-4">Hello world!</div>
+      <div class="bg-purple-500 text-white pr-4">Hello world!</div>
+      <!-- PT and PB -> Padding Top / Padding Bottom -->
+      <div class="bg-purple-500 text-white pt-4">Hello world!</div>
+      <div class="bg-purple-500 text-white pb-4">Hello world!</div>
+      <!-- We can also do the sizing by pixels however that ain`t a good practice -->
+      <div class="bg-purple-500 text-white pt-[20px]">Hello world!</div>
+
       <!-- Space Between X -->
+      <!-- The space-between follows the same pattern of margin for sizing -->
+      <div class="flex mt-24 space-x-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+      </div>
 
       <!-- Space Between Y -->
+      <div class="flex flex-col mt-24 space-y-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+      </div>
     </div>
   </body>
 </html>
