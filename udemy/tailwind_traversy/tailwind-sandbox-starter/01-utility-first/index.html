@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- For learning purposes the best is to use cdn route code -->
+    <!-- However it is not the best way to do it. We use NPM to bring Tailwind when developing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Message Alert</title>
+  </head>
+  <body>
+    <!-- Utility First -->
+    
+    <!-- By describing classes we start do develop our components -->
+    <!-- All those classes provide some kind of CSS formatting like: -->
+    <!-- Object positioning (flex, grid, float), alignment, padding, background, color, etc -->
+    <div class="flex items-center p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-x-4 mt-12">
+      <img class="w-12 h-12" src="../assets/img/warning.svg" alt="">
+      <div>
+        <div class="text-xl font-medium text-black">
+          Are you sure?
+        </div>
+        <p class="text-slate-500">You are about to delete a post</p>
+      </div>
+    </div>
+  </body>
+</html>
