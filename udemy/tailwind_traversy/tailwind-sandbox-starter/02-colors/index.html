@@ -12,21 +12,61 @@
     <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
     <!-- Text Colors -->
+    <!-- When dealing with text color now that black and white don`t have shade -->
+    <p class="text-black">Tailwind is awesome</p>
+    <p class="text-white">Tailwind is awesome</p>
+    <!-- When using any other colors we have to add shade which goes from 50 to 500 -->
+    <!-- Values above 500 will change the color -->
+    <p class="text-red-500">Tailwind is awesome</p>
+    <p class="text-green-500">Tailwind is awesome</p>
+    <p class="text-blue-500">Tailwind is awesome</p>
+    <p class="text-purple-500">Tailwind is awesome</p>
+    <p class="text-yellow-500">Tailwind is awesome</p>
 
     <!-- Background Colors -->
+    <!-- Background colors works just like the text colors although we use the class BG for it -->
+    <p class="bg-red-500">Tailwind is awesome</p>
+    <p class="text-white bg-slate-800">Tailwind is awesome</p>
+    <p class="bg-indigo-400">Tailwind is awesome</p>
+    <p class="bg-amber-300">Tailwind is awesome</p>
 
     <!-- Text Underline -->
+    <p class="underline decoration-blue-500">Tailwind is awesome</p>
+    <p class="underline decoration-green-500">Tailwind is awesome</p>
+    <p class="underline decoration-yellow-500">Tailwind is awesome</p>
+    <p class="underline decoration-red-500">Tailwind is awesome</p>
 
     <!-- Border Colors -->
+    <!-- This will provide a border line -->
+    <input type="text" class="border border-blue-400">
+    <input type="text" class="border border-green-400">
+    <input type="text" class="border border-lime-400">
 
     <!-- Divide Colors -->
+    <div class="divide-y divide-blue-400">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+    </div>
 
     <!-- Outline Colors -->
+    <button class="outline outline-blue-500">Hello</button>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <!-- When using / the value that comes after will define how strong will be the shadow -->
+    <buttom class="shadow-lg bg-cyan-500 shadow-cyan-500">Subcribe</buttom>
+    <buttom class="shadow-lg bg-cyan-500 shadow-purple-500/50">Subcribe</buttom>
 
     <!-- Accent Colors -->
+    <!-- This will create a checkbox -->
+    <input type="checkbox" class="accent-purple-500" checked>
 
     <!-- Arbitrary Colors -->
+    <!-- Custom colors using RGB, HEX or names -->
+    <div class="bg-[#427fab]">Hello!</div>
+    <div class="bg-[rgb(255,0,0)]">Hello!</div>
+     <div class="bg-[blue]">Hello!</div>
   </body>
 </html>
