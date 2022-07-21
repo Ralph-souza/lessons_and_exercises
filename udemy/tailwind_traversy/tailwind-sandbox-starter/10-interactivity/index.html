@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- To soften the scrolling we can add SCROLL-SMOTH to the <html> tag -->
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -9,25 +10,117 @@
   </head>
   <body>
     <!-- Hover State Styling -->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 hover:bg-indigo-500 hover:text-black">Submit</button>
 
     <!-- Focus State Styling -->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-green-500 focus:text-white">Submit</button>
 
     <!-- Active State Styling -->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-orange-500 active:text-white">Submit</button>
 
     <!-- Styling based on parent state -->
+    <!-- Without GROUP the child element won`t change, adding group:hover to the element makes it functional -->
+    <a
+     href="" 
+     class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-6 hover:bg-sky-500"
+     >
+      <h3 class="group-hover:text-white">Card title</h3>
+      <p class="group-hover:text-white">This is the card text</p>
+    </a>
 
     <!-- Pseudo Classes -->
+    <ul>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-indigo-500">Item 1</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-indigo-500">Item 2</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-indigo-500">Item 3</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-indigo-500">Item 4</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-indigo-500">Item 5</li>
+      <li class="last:bg-blue-200 even:bg-green-500 odd:bg-indigo-500">Item 6</li>
+    </ul>
 
     <!-- Appearance -->
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+    <select class="appearance-none">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <br>
 
     <!-- Cursor -->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-pointer">
+      Submit
+    </button>
+
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-wait">
+      Submit
+    </button>
+
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-not-allowed">
+      Submit
+    </button>
 
     <!-- Resize -->
 
     <!-- User Select -->
+    <div class="select-none">Lorem ipsum dolor sit amet.</div>
+    <div class="select-text">Lorem ipsum dolor sit amet.</div>
+    <div class="select-all">Lorem ipsum dolor sit amet.</div>
+    <div class="select-auto">Lorem ipsum dolor sit amet.</div>
+
+    <br>
+
+    <a href="#item" class="block my-6 font-bold">Go to item</a>
 
     <!-- Smooth Scroll Example -->
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Ex sit ipsam, fuga quam, necessitatibus tempora, exercitationem impedit doloremque minus 
+      expedita incidunt odit atque id fugit. Veritatis quibusdam aut minus delectus, 
+      facilis veniam enim, cum, dolores deserunt voluptates voluptatem nesciunt aliquid 
+      temporibus possimus nemo beatae placeat doloribus vel corporis libero perspiciatis impedit. 
+      Asperiores quisquam aliquam nobis minima, assumenda fuga. Omnis pariatur assumenda 
+      nulla quaerat ex inventore ducimus doloremque accusamus similique sit, accusantium 
+      natus dignissimos asperiores repellendus illum laborum delectus iure, deserunt, 
+      vero quod sunt libero quam veniam. Corrupti deserunt consequatur ab expedita numquam 
+      totam sunt iste quod est, ex, velit soluta assumenda delectus aliquid neque illo atque non? 
+      Tempore dignissimos molestias blanditiis incidunt asperiores repellendus. 
+      Iste, repellendus non ipsam amet odio ab, eius impedit molestias excepturi facere 
+      doloremque maiores voluptatibus quas eveniet nam error temporibus, 
+      fuga exercitationem porro voluptatum obcaecati id dolore? Ducimus, 
+      iure unde architecto dolores reiciendis quasi doloremque recusandae. 
+      Hic inventore incidunt nihil similique libero, ipsam tempora veniam sit 
+      consequuntur enim est asperiores qui dolore vel, id at ut delectus. 
+      Porro exercitationem illo minima obcaecati perferendis necessitatibus, 
+      vero deserunt dolore aliquam quisquam asperiores similique reiciendis. 
+      Ut provident est qui cum sint omnis amet, eius delectus ea accusamus esse porro 
+      necessitatibus quia soluta beatae dolorem maxime. Ducimus, laudantium? 
+      Eaque maiores, dolores fugiat quis odit temporibus repellat deserunt natus eligendi 
+      inventore possimus doloribus deleniti vel tempora saepe. Minus, unde. 
+      Tempore, sapiente, enim tempora quia atque aliquam reiciendis ad deleniti amet 
+      vero asperiores sed officia eveniet, earum eius saepe nulla dolorem dolorum! 
+      Nobis quo explicabo similique impedit placeat, atque asperiores, ipsum repudiandae 
+      accusantium repellat labore ad ipsa. Rerum suscipit voluptates necessitatibus ducimus. 
+      Facilis, doloribus perferendis. Distinctio iure cum tenetur omnis eos cumque? 
+      Praesentium laudantium maiores, quisquam at illum odio molestiae. Maxime cupiditate 
+      nulla eaque ratione laboriosam. Excepturi quisquam inventore quod nesciunt est 
+      accusantium sunt, molestias quibusdam ex deleniti repellendus illum placeat id fugit 
+      tempora ipsam asperiores deserunt atque commodi quae nisi rerum exercitationem? 
+      Sequi illo, corrupti, sit ad autem, exercitationem officia ab in at dolorem repudiandae. 
+      Nemo cumque obcaecati nostrum aspernatur pariatur? Quos, dolore ratione exercitationem 
+      provident est rem vel, voluptas quo, adipisci similique cupiditate explicabo blanditiis 
+      sequi quia ex sit reiciendis ipsam sed ut at dicta omnis accusamus odio. Suscipit provident, 
+      totam ab alias doloribus repellendus veniam iusto quae neque nobis quaerat mollitia 
+      laborum repudiandae fugit, dolore doloremque placeat reprehenderit qui aspernatur dolorum incidunt. 
+      Facilis autem non quod aspernatur atque culpa.
+    </p>
+    <div id="item">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Quae nesciunt amet placeat adipisci blanditiis. Laborum nam voluptate quasi eaque 
+      delectus sunt earum alias reprehenderit hic odio, dolorum consequuntur quam accusamus 
+      praesentium labore sed animi laudantium veniam iure at soluta assumenda. 
+      Quas quam suscipit, voluptatem assumenda ipsam voluptas quis animi aspernatur!
+    </div>
   </body>
 </html>
 
