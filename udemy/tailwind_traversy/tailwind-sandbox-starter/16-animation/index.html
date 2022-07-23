@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- The tailwind.config allows us to create custom animations -->
+    <!-- We can also create a new keyframes -->
+    <!-- Below we set the name of the keyframe, as the example 'wiggle' -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              wiggle: 'wiggle 1s ease-in-out infinite'
+            },
+            // Then we create a keyframe object then we define its properties
+            keyframes: {
+              wiggle: {
+                '0%, 100%': {transform: 'rotate(-12deg)'},
+                '50%': {transform: 'rotate(12deg)'}
+              }
+            }
+          }
+        }
+      }
+    </script>
     <title>Animation</title>
   </head>
   <body>
     <div class="flex items-center justify-center min-h-screen bg-slate-900">
+      <!-- Then we bring the custom javascript element into de class as the example below 'animate-spin-slow' -->
+      <!-- We can also call the keyframe using the same method used for our custom animation -->
       <svg
-        class="w-48 text-white"
+        class="animate-spin-slow w-48 text-white"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
