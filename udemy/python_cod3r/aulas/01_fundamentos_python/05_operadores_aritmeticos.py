@@ -54,15 +54,18 @@ Vale esclarecer que o operador entre os dois operandos, neste exemplo o '+', rec
 """
 Operadores unários são àqueles que precisam apenas de um operando, como no exemplo abaixo
 """
-a = 12
-print(++a)
+
+a = 12 
+a += 1
+print(a)
 
 """
-Neste exemplo A teria o valor de 12(doze), o operador unário '++' é o que chamados de operador PRE-FIXADO, ou seja, que vem antes do operando A
-e neste caso ele acrescenta mais 1(um) ao valor de A obtendo assim como resposta o valor 13(treze), e temos também o operador PÓS-FIXADO que vem
-após o operando como no exemplo abaixo, e neste caso fazendo o decréscimo de -1(menos um) ao valor do operando A recebendo assim o valor
+Neste exemplo A teria o valor de 12(doze), o operador unário '+=' é o que chamados de operador de ATRIBUÍÇÃO-ADIÇÃO, ou seja, que vem antes do operando A
+e neste caso ele acrescenta mais 1(um) ao valor de A obtendo assim como resposta o valor 13(treze), e temos também o operador ATRIBUÍÇÃO-SUBTRAÇÃO que vem
+antes do operando como no exemplo abaixo, e neste caso fazendo o decréscimo de -1(menos um) ao valor do operando A recebendo assim o valor
 de 11(onze) como retorno
 """
 
-a = 12
-print(a--)
+a = 12 
+a -= 1
+print(a)
